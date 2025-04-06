@@ -80,6 +80,7 @@ body {
   border: none;
   background-color: white;
   font-size: 1rem;
+  width: 100%;
 }
 
 .nav-item:hover {
