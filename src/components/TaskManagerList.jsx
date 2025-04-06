@@ -210,7 +210,7 @@ function TaskManagerList() {
               {/* Upcoming Task */}
               {filterTasks(taskItem).length === 0 ? (
                 <p className="task-item-message">
-                  No delayed tasks! Keep up the good work!
+                  No completed tasks yet. Small steps lead to big wins!
                 </p>
               ) : (
                 filterTasks(taskItem)
