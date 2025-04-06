@@ -129,10 +129,17 @@ function TaskManagerSideBar({ activeSection, setActiveSection }) {
               <User size={16} />
             </div>
             <div className="user-info">
-              <p className="user-name">
+              <p
+                className="user-name"
+                title={
+                  userInfo.name.charAt(0).toUpperCase() + userInfo.name.slice(1)
+                }
+              >
                 {userInfo.name.charAt(0).toUpperCase() + userInfo.name.slice(1)}
               </p>
-              <p className="user-email">{userInfo.email}</p>
+              <p className="user-email" title={userInfo.email}>
+                {userInfo.email}
+              </p>
             </div>
           </div>
         </div>

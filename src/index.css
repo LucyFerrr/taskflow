@@ -218,10 +218,12 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+  flex-shrink: 0;
 }
 
 .user-info {
   margin-left: 0.75rem;
+  overflow: hidden;
 }
 
 .user-name {
@@ -232,6 +234,16 @@ body {
 .user-email {
   font-size: 0.75rem;
   color: #6b7280;
+}
+
+.user-name,
+.user-email {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+  display: block;
 }
 
 /* Mobile Header */
@@ -932,6 +944,7 @@ body {
   padding: 1rem;
   overflow-y: auto;
   padding-top: 1rem;
+  border-radius: 0.75rem;
 }
 
 @media (min-width: 1280px) {
