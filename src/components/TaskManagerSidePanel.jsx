@@ -114,7 +114,7 @@ function TaskManagerSidePanel() {
 
   return (
     <aside className={containerClass}>
-      <div className="sidebar-header">
+      <div className="sidebar-header sidebar-mobile">
         <h2 className="section-title">Sticky Notes</h2>
         <button className="action-button" onClick={handleAddStickyNote}>
           <PlusCircle size={20} />
